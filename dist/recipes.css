@@ -1,64 +1,57 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    font-family: sans-serif;
-}
+    a{
+    text-decoration: none;
+    }
+    .text-info {
+        color: #31708f;
+    }
+    .recipesList ul{margin: 0; padding: 0; list-style: none;}
+    .recipesList ul li{display: inline-block; width: 240px; float: left; margin-right: 15px; margin-bottom: 15px;}
+    .recipesBox{
+        border: 1px solid #ddd;
+        color: #333;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 20px;
+        background-color: #f5f5f5;
+        
+    }
+    .recipesBox .recipeImg {
+        padding: 15px 0;
+        background-color: #fff;
+    text-align: center;
+    }
+    .recipesBox .recipeImg img{
+        border: 6px solid #f8f8f8;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        transition: all 0.3s ease 0s;
+        margin: 0 auto;
+        height: 120px;
+        width: 120px;
+    }
+    .recipeInfo{
+        padding: 10px;
+        text-align: center;
+        border-top: 1px solid #eee;
+    }
+    .recipeInfo h6{font-size: 16px; margin:0;}
+    .recipesBox strong{color: #444;}
+    .recipesBox p{font-size: 13px; margin: 0; line-height: 22px;}
+    
+    .showBioBtn{background-color: #337ab7; padding: 5px 10px; color: #fff; font-size: 12px;}
 
-body {
-	font-family: 'Raleway', sans-serif;
-	background-color:whitesmoke;
-}
-
-
-.container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    height: 100%;
-	padding: 5% 0;
-}
-
-
-.card{
-    height: 400px;
-    width: 350px;
-    margin: 50px;
-    box-shadow: 5px 5px 20px black;
-    overflow: hidden;
-
-}
-
-
-
-
-.container_foto h2 {
-	color: black;
-	font-weight: 800;
-	font-size: 25px;
-	border-bottom: #fff solid 1px;
-}
-
-.container_foto h4 {
-	font-weight: 300;
-	color: black;
-	font-size: 16px;
-}
-
-.container_foto img {
-	width: 350px;
-	top: 0;
-	left: 0;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #page_navigation {
+    clear:both;
+    margin: 20px 0;
+    }
+    #page_navigation a{
+        padding:3px 6px;
+        border:1px solid #2e6da4;
+        margin:2px;
+        color:black;
+        text-decoration:none
+    }
+    .active_page{
+        background:#337ab7;
+        color:white !important;
+    }

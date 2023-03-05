@@ -20,36 +20,50 @@
     </div>
 
 
-    <script id="recipes-template" type="text/x-handlebars-template">
+    <div class="recipesList">
+        <input type='hidden' id='current_page' />
+        <input type='hidden' id='show_per_page' />
+        <ul id="pagingBox">
+            
+        </ul>
         
-    </script>
-    
 
-    <div class="container-fluid contenedor text-center">
-        <div class="recipes-template">
-            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
-                <div class="ver_mas text-center">
-                    <span class="lnr lnr-eye"></span>
-                </div>
-                <article class="text-left">
-                    <h2>Ratatouille</h2>
-                    <h4>ingredients <br>
-                    Courgettes
-                    Yellow Pepper
-                    Tomato</h4>
-                </article>
-                <img src="https://www.themealdb.com/images/media/meals/wrpwuu1511786491.jpg" alt="">
-            </div>
-        </div>
+
+        <script id="recipes-template" type="text/x-handlebars-template">
+            {{#each recipes}}
+                <li>
+                    <div class="recipesBox">
+                        <div class="recipeImg">
+                            <img src={{thumbnail}}  border="0">
+                        </div>
+                        <div class="recipeInfo">
+                            <div class="info">
+                                <h6><strong>{{title}}</strong></h6>
+                                <p class="text-info">ingredients:</p>
+                                <p>
+                                    "Aubergine",
+                                    "Courgettes",
+                                    "Yellow Pepper",
+                                    "Tomato",
+                                    "Olive Oil",
+                                    "Basil",
+                                    "Onion",
+                                    "Garlic Clove",
+                                    "Red Wine Vinegar",
+                                    "Sugar"
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            {{/each}}
+        </script>
     </div>
-
     
-
-    
-
-
+    <div id='page_navigation'></div>
 </body>
 <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+<script src="renderer.js"></script>
 <script src="main.js"></script>
 </html>
