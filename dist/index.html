@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipes.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <input id="ingredient" type="text" placeholder="ingredient">
+        <button onclick="searchRecipes()">Search!</button>
+    </div>
+    <div>
+        <input onchange="dairyFilter()" type="checkbox" name="dairy" id="dairySensitive">
+        <label for="dairySensitive">dairy</label>
+
+        <input onchange="glutenFilter()" type="checkbox" name="gluten" id="glutenSensitive">
+        <label for="glutenSensitive">gluten</label>
+    </div>
+
+
+    <script id="recipes-template" type="text/x-handlebars-template">
+        
+    </script>
+    
+
+    <div class="container-fluid contenedor text-center">
+        <div class="recipes-template">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 container_foto ">
+                <div class="ver_mas text-center">
+                    <span class="lnr lnr-eye"></span>
+                </div>
+                <article class="text-left">
+                    <h2>Ratatouille</h2>
+                    <h4>ingredients <br>
+                    Courgettes
+                    Yellow Pepper
+                    Tomato</h4>
+                </article>
+                <img src="https://www.themealdb.com/images/media/meals/wrpwuu1511786491.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    
+
+    
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.4/handlebars.js"></script>
+<script src="main.js"></script>
+</html>

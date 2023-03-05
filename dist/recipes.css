@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	background-color:whitesmoke;
+}
+
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 100%;
+	padding: 5% 0;
+}
+
+
+.card{
+    height: 400px;
+    width: 350px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+
+}
+
+
+
+
+.container_foto h2 {
+	color: black;
+	font-weight: 800;
+	font-size: 25px;
+	border-bottom: #fff solid 1px;
+}
+
+.container_foto h4 {
+	font-weight: 300;
+	color: black;
+	font-size: 16px;
+}
+
+.container_foto img {
+	width: 350px;
+	top: 0;
+	left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
